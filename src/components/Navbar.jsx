@@ -8,7 +8,29 @@ import {
   faArrowRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Navbar() {
+const Navbar = ({ isAuth }) => {
+  const loginComponent = () => {
+    const loginComponent = (
+      <Link to="/login">
+        <FontAwesomeIcon icon={faArrowRightToBracket} />
+        ログイン
+      </Link>
+    );
+
+    return loginComponent;
+  };
+
+  const logoutComponent = () => {
+    const logoutComponent = (
+      <Link to="/login">
+        <FontAwesomeIcon icon={faArrowRightToBracket} />
+        ログアウト
+      </Link>
+    );
+
+    return logoutComponent;
+  };
+
   return (
     <nav>
       <Link to="/">
@@ -19,12 +41,9 @@ function Navbar() {
         <FontAwesomeIcon icon={faFilePen} />
         記事投稿
       </Link>
-      <Link to="/login">
-        <FontAwesomeIcon icon={faArrowRightToBracket} />
-        ログイン
-      </Link>
+      {!isAuth ? loginComponent() : logoutComponent()}
     </nav>
   );
-}
+};
 
 export default Navbar;
