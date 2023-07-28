@@ -1,0 +1,57 @@
+.home-page {
+  width: 100%;
+  height: calc(100vh - 80px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-page .post-contents {
+  width: 600px;
+  height: auto;
+  max-height: 600px;
+  background-color: white;
+  box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+    5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.post-header h1 {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.post-contents .post-text-container {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  word-wrap: break-word;
+}
+
+.name-and-delete-button {
+  display: flex;
+  align-items: center;
+}
+
+.name-and-delete-button button {
+  flex: 10%;
+  background-color: rgb(227, 102, 102);
+  color: white;
+  padding: 7px 15px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.name-and-delete-button button:hover {
+  background-color: rgb(238, 42, 42);
+}
+
+.name-and-delete-button h3 {
+  flex: 90%;
+}
