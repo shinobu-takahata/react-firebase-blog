@@ -52,6 +52,11 @@
   background-color: rgb(238, 42, 42);
 }
 
-.name-and-delete-button h3 {
+/* .name-and-delete-button h3 {
   flex: 90%;
+} */
+
+.user-name {
+  flex: 90%;
+  color: rgb(154, 152, 152);
 }
